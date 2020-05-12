@@ -1,0 +1,38 @@
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/547/778/non_2x/vector-abstract-blurred-gradient-turquoise-background.jpg");
+    background-size: auto 100vh;
+    height: 100vh;
+    font-family: verdana;
+  }
+  
+  .menu{
+    background-color: white;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li{
+    list-style:none;
+  }
+  
+  a{
+    text-decoration: none;
+    color: teal;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+    color: red;
+  } 
+  
+  .site-subtitle, .site-title{
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  .site-subtitle{
+    font-style: italic;
+    font-family: monospace;
+  }
