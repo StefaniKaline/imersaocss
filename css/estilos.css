@@ -1,38 +1,46 @@
+* {
+  margin:0;
+}
 body{
-    background-image: url("https://static.vecteezy.com/system/resources/previews/000/547/778/non_2x/vector-abstract-blurred-gradient-turquoise-background.jpg");
-    background-size: auto 100vh;
-    height: 100vh;
-    font-family: verdana;
-  }
-  
-  .menu{
-    background-color: white;
-  }
-  
-  .menu ul{
-    display: flex;
-    justify-content: space-around;
-  }
-  .menu li{
-    list-style:none;
-  }
-  
-  a{
-    text-decoration: none;
-    color: teal;
-  }
-  
-  a:hover{
-    text-decoration: underline;
-    color: red;
-  } 
-  
-  .site-subtitle, .site-title{
-    text-align: center;
-    color: whitesmoke;
-  }
-  
-  .site-subtitle{
-    font-style: italic;
-    font-family: monospace;
-  }
+  background-image: url("https://images2.alphacoders.com/103/1039991.jpg");
+  background-size: auto 100vh;
+  height: 100vh;
+  font-family: verdana;
+  backdrop-filter: blur(2px);
+}
+
+.menu{
+  background-color: white;
+  opacity: 0.7;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+.menu li{
+  list-style:none;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: teal;
+}
+
+a:hover{
+  /*text-decoration: underline;*/
+  color: pink;
+} 
+
+.site-subtitle, .site-title{
+  text-align: center;
+  color: whitesmoke;
+}
+
+.site-subtitle{
+  font-style: italic;
+  font-family: monospace;
+}
