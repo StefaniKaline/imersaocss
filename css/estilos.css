@@ -60,6 +60,7 @@ a{
 a:hover{
   /*text-decoration: underline;*/
   color: rgb(38, 209, 209);
+  font-size: 1.3em;
 } 
 
 .site-subtitle, .site-title{
