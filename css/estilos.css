@@ -7,23 +7,41 @@ body{
   background-image: url("https://i.pinimg.com/originals/5f/ee/8e/5fee8e4a9fea271529cfd8828dd990d5.gif");
   background-size: auto 100vh;
   height: 100vh;
-  font-family: verdana;
+  font-family: monospace;
   font-size: 16px;
 }
 
 @media (min-width: 500px){
   body{
-    font-size: 18px;
-  }
-  
+    font-size: 22px;
+  } 
 }
 
 @media(min-width: 1200px){
   header div{
     font-size: 30px;
   }
+ 
 }
 
+@media (min-width: 640px){
+  .gitHub .grid{
+    grid-template-columns: 250px 250px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:1000px){
+  .contato a{
+    font-size: 2em;
+  }
+}
+
+@media (min-width:1000px){
+  .contato a{
+    font-size: 4em;
+  }
+}
 header{
   height: 100vh;
   display: flex;
@@ -55,6 +73,7 @@ header{
 a{
   text-decoration: none;
   color: rgb(251, 255, 255);
+  /*transition: color, 1s;*/
 }
 
 a:hover{
@@ -71,14 +90,55 @@ a:hover{
   color: whitesmoke;
 }
 
+.site-title{
+  font-family: 'Squada One', cursive;
+  font-size: 2.5em;
+}
 .site-subtitle{
-  font-style: italic;
-  font-family: monospace;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2em;
 }
 
+.contato,
+.gitHub{
+  padding: 2em;
+  min-height: 100vh;
+}
+
+.contato h2,
+.gitHub h2{
+  font-family: 'Orbitron', sans-serif;
+  color: whitesmoke;
+  font-size: 3em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.gitHub figure{
+  text-align: center;
+}
+.gitHub .grid{
+  display: grid;
+  gap: 2em;
+}
+
+.grid figcaption a{
+  background-color: tomato;
+}
+
+.contato .icons{
+  text-align: center;
+}
+
+.contato a{
+  transition: text-shadow, 1s;
+}
+.contato a:hover{
+  text-shadow: 2px 4px 7px blueviolet;
+}
 .img-portfolio{
   height: 180px;
-  width: 220px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 10%;
 }
- 
-
