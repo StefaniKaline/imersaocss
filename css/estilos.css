@@ -42,6 +42,8 @@ body{
     font-size: 4em;
   }
 }
+
+
 header{
   height: 100vh;
   display: flex;
@@ -53,6 +55,7 @@ header{
   position: fixed;
   width: 100vw;
   top: 0.0;
+  z-index: 1; /*o menu vai ter prioridade sobre os outros elementos no eixo z*/
 }
 
 .menu ul{
@@ -69,20 +72,30 @@ header{
   display: block;
   background-color: tomato;
   padding: 10px;
+  transition: color 1s, font-size 1s;
 }
 a{
   text-decoration: none;
   color: rgb(251, 255, 255);
-  /*transition: color, 1s;*/
 }
 
-a:hover{
-  /*text-decoration: underline;*/
-  color: rgb(38, 209, 209);
-} 
-
+.menu  a:active,
 .menu a:hover{
   font-size: 1.3em;
+  color: rgb(38, 209, 209);
+}
+
+.titulo{
+  transform: scale(0.2) translateX(70vh) skewX(60deg);
+  opacity: 0;
+  animation: linear 2s introTitulo forwards; 
+}
+
+@keyframes introTitulo{
+  100%{
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
 }
 
 .site-subtitle, .site-title{
@@ -96,13 +109,14 @@ a:hover{
 }
 .site-subtitle{
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .contato,
 .gitHub{
   padding: 2em;
   min-height: 100vh;
+  margin: 3em;
 }
 
 .contato h2,
@@ -112,6 +126,7 @@ a:hover{
   font-size: 3em;
   margin-bottom: 1.5em;
   text-align: center;
+  line-height:2em;
 }
 
 .gitHub figure{
@@ -126,19 +141,61 @@ a:hover{
   background-color: tomato;
 }
 
+.grid figcaption{
+  margin: 1.5em 0em;
+}
+
+.grid figcaption a:hover{
+  color: rgb(38, 209, 209);
+}
+
 .contato .icons{
   text-align: center;
 }
 
 .contato a{
-  transition: text-shadow, 1s;
+  transition: color 1s,text-shadow 1s;
 }
+
+.contato a:active,
 .contato a:hover{
   text-shadow: 2px 4px 7px blueviolet;
+  color: rgb(38, 209, 209);
+
 }
 .img-portfolio{
   height: 180px;
   width: 250px;
   object-fit: cover;
   border-radius: 10%;
+  transition: transform 500ms;
+  opacity: 0.8;
+}
+
+.img-kaline{
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 10px 0px 10px 0px rgb(3, 12, 14);
+  opacity: 0.8;
+}
+
+.titulo{
+  text-align: center;
+}
+
+.img-kaline:active,
+.img-kaline:hover{
+  transform: scale(1.1);
+
+}
+
+.grid figcaption{
+  color: whitesmoke;
+  text-align: left;
+}
+.img-portfolio:active,
+.img-portfolio:hover{
+  transform: scale(1.1);
 }
