@@ -42,18 +42,24 @@ body{
     height: 150px;
     width: 180px;
   }
-}
-
-@media (min-width:1000px){
-  .img-portfolio{
-    height: 180px;
-    width: 250px;
+  .img-kaline{
+    height: 150px;
+    width: 150px;
   }
 }
+
 
 @media (min-width:1000px){
   .contato a{
     font-size: 4em;
+  }
+  .img-portfolio{
+    height: 180px;
+    width: 250px;
+  }
+  .img-kaline{
+    height: 180px;
+    width: 180px;
   }
 }
 
@@ -189,12 +195,13 @@ a{
 }
 
 .img-kaline{
-  height: 170px;
-  width: 170px;
+  /*height: 1700px;
+  width: 170px;*/
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 10px 0px 10px 0px rgb(3, 12, 14);
   opacity: 0.8;
+  transition: transform 500ms;
 }
 
 .titulo{
@@ -216,3 +223,6 @@ a{
 .img-portfolio:hover{
   transform: scale(1.1);
 }
+
+
+
