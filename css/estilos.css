@@ -7,14 +7,16 @@ body{
   background-image: url("https://i.pinimg.com/originals/5f/ee/8e/5fee8e4a9fea271529cfd8828dd990d5.gif");
   background-size: auto 100vh;
   height: 100vh;
+  /*width: 100vw;*/
   font-family: monospace;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media (min-width: 500px){
   body{
-    font-size: 22px;
+    font-size: 20px;
   } 
+  
 }
 
 @media(min-width: 1200px){
@@ -29,11 +31,23 @@ body{
     grid-template-columns: 250px 250px;
     justify-content: space-around;
   }
+  
 }
 
 @media (max-width:1000px){
   .contato a{
     font-size: 3em;
+  }
+  .img-portfolio{
+    height: 150px;
+    width: 180px;
+  }
+}
+
+@media (min-width:1000px){
+  .img-portfolio{
+    height: 180px;
+    width: 250px;
   }
 }
 
@@ -86,14 +100,14 @@ a{
 }
 
 .titulo{
-  transform: scale(0.2) translateX(70vh) skewX(60deg);
+  transform: scale(0.2);
   opacity: 0;
   animation: linear 2s introTitulo forwards; 
 }
 
 @keyframes introTitulo{
   100%{
-    transform: scale(1) translateX(0);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -116,14 +130,15 @@ a{
 .gitHub{
   padding: 2em;
   min-height: 100vh;
-  margin: 3em;
+  width: auto;
+  margin: 2em;
 }
 
 .contato h2,
 .gitHub h2{
   font-family: 'Orbitron', sans-serif;
   color: whitesmoke;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1.5em;
   text-align: center;
   line-height:2em;
@@ -135,6 +150,7 @@ a{
 .gitHub .grid{
   display: grid;
   gap: 2em;
+  text-align: center;
 }
 
 .grid figcaption a{
@@ -164,8 +180,8 @@ a{
 
 }
 .img-portfolio{
-  height: 180px;
-  width: 250px;
+  /*height: 150px;
+  width: 220px;*/
   object-fit: cover;
   border-radius: 10%;
   transition: transform 500ms;
@@ -195,6 +211,7 @@ a{
   color: whitesmoke;
   text-align: left;
 }
+
 .img-portfolio:active,
 .img-portfolio:hover{
   transform: scale(1.1);
